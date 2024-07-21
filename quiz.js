@@ -1,7 +1,11 @@
+let btn = document.getElementById("submit-answer");
+btn.addEventListener("click", checkAnswer);
+
+
 function checkAnswer() {
-    correctAnswer = "4";
+    let correctAnswer = "4";
    
-    let userAnswer= document.querySelector('input[name="quiz"]').value;
+    let userAnswer= Array.document.querySelector('input[name="quiz"]').value;
     
     for (let i = 0; i < userAnswer.length; i++) {
         if (userAnswer[i].checked && userAnswer[i] == correctAnswer) { 
@@ -11,5 +15,8 @@ function checkAnswer() {
 
 }
 
-document.addEventListener("click", checkAnswer);
+
+
+
+
 
